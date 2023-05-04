@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "name": "(gdb) Launch",    // �������ƣ��������������õ������˵�����ʾ
+            "type": "cppdbg",         // �������ͣ�����ֻ��Ϊcppdbg
+            "request": "launch",    // �����������ͣ�����Ϊlaunch����������attach�����ӣ�
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",// ��Ҫ���е��Եĳ����·��
+            "args": [],                // �������ʱ���ݸ�����������в�����һ����Ϊ�ռ���
+            "stopAtEntry": false,     // ��Ϊtrueʱ������ͣ�ڳ�����ڴ���һ������Ϊfalse
+            "cwd": "${workspaceRoot}",// ���Գ���ʱ�Ĺ���Ŀ¼��һ��Ϊ${workspaceRoot}����������Ŀ¼
+            "environment": [],
+            "externalConsole": true,// ����ʱ�Ƿ���ʾ����̨���ڣ�һ������Ϊtrue��ʾ����̨
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\c++\\TDM-GCC-64\\bin\\gdb64.exe",// miDebugger��·����ע������Ҫ��MinGw��·����Ӧ
+            "preLaunchTask": "g++",    // ���ԻỰ��ʼǰִ�е�����һ��Ϊ�������c++Ϊg++, cΪgcc
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
