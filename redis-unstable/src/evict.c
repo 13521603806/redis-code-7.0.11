@@ -87,6 +87,7 @@ unsigned int LRU_CLOCK(void) {
     return lruclock;
 }
 
+/* 评估键的空置时间 */
 /* Given an object returns the min number of milliseconds the object was never
  * requested, using an approximated LRU algorithm. */
 unsigned long long estimateObjectIdleTime(robj *o) {
