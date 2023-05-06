@@ -1,6 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "*.def": "c"
+        "*.def": "c",
+        "fmacros.h": "c"
     }
 }
